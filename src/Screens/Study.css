@@ -1,0 +1,23 @@
+.card-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.whole-card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+
+.card-front {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    position: absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
